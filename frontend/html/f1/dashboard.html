@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">College Placement Portal</div>
+        <div class="nav-links">
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="#">Profile</a>
+            <a href="#">Placement Drives</a>
+            <a href="#">Application Status</a>
+            <a href="login.html">Logout</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="welcome">
+            <h2>Welcome, Student 👋</h2>
+            <p>Here’s an overview of your placement activities.</p>
+        </section>
+
+        <section class="activity-cards">
+            <div class="card">
+                <h3>Placement Drives</h3>
+                <p>12</p>
+                <span>Available drives</span>
+            </div>
+
+            <div class="card">
+                <h3>Applications</h3>
+                <p>5</p>
+                <span>Submitted applications</span>
+            </div>
+
+            <div class="card">
+                <h3>Shortlisted</h3>
+                <p>3</p>
+                <span>Companies shortlisted</span>
+            </div>
+        </section>
+
+        <section class="upcoming-drives">
+            <h2>Upcoming Placement Drives</h2>
+
+            <div class="calendar-strip">
+                <div class="calendar-day active-day">
+                    <span>20</span>
+                    <small>SEP</small>
+                </div>
+                <div class="calendar-day">
+                    <span>21</span>
+                    <small>SEP</small>
+                </div>
+                <div class="calendar-day">
+                    <span>22</span>
+                    <small>SEP</small>
+                </div>
+                <div class="calendar-day">
+                    <span>23</span>
+                    <small>SEP</small>
+                </div>
+                <div class="calendar-day">
+                    <span>24</span>
+                    <small>SEP</small>
+                </div>
+            </div>
+
+            <div class="drive-card">
+                <h3>TCS</h3>
+                <p>Software Engineer</p>
+                <p>20 September 2026</p>
+                <button type="button">View Details</button>
+            </div>
+        </section>
+
+        <section class="quick-links">
+            <h2>Quick Links</h2>
+            <div class="quick-links-container">
+                <a href="#" class="quick-link">
+                    <h3>My Profile</h3>
+                    <p>View and update Profile</p>
+                </a>
+
+                <a href="#" class="quick-link">
+                    <h3>Placement Drives</h3>
+                    <p>Explore available drives</p>
+                </a>
+
+                <a href="#" class="quick-link">
+                    <h3>Application Status</h3>
+                    <p>Track submitted applications</p>
+                </a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
