@@ -1,0 +1,55 @@
+:root {
+  --primary-color: #1F3B5C;
+  --accent-color: #D4A017;
+  --bg-color: #F5F6FA;
+  --card-bg: #FFFFFF;
+  --text-color: #222222;
+  --text-muted: #6B7280;
+  --border-color: #E0E0E0;
+
+  --status-applied: #3B82F6;
+  --status-shortlisted: #F59E0B;
+  --status-interview: #8B5CF6;
+  --status-selected: #22C55E;
+  --status-rejected: #EF4444;
+
+  --font-main: 'Poppins', sans-serif;
+  --radius: 8px;
+  --shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Common Navbar */
+.navbar {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.navbar .brand {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+.navbar a:hover {
+  color: var(--accent-color);
+}
