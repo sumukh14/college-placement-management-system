@@ -1,0 +1,634 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --ink: #17243b;
+    --muted: #758198;
+    --blue: #315be8;
+    --line: #e5eaf2;
+    --bg: #f4f7fc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'DM Sans', Arial, sans-serif;
+}
+
+.topbar {
+    height: 76px;
+    background: #fff;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6.5%;
+    gap: 24px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font: 800 19px Manrope, sans-serif;
+    color: var(--ink);
+    text-decoration: none;
+}
+
+.brand-mark {
+    display: grid;
+    place-items: center;
+    width: 37px;
+    height: 37px;
+    background: linear-gradient(135deg, #315be8, #18b8b0);
+    border-radius: 12px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.topbar nav {
+    display: flex;
+    gap: 8px;
+}
+
+.topbar nav a {
+    padding: 11px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #68758a;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.topbar nav a:hover,
+.topbar nav .active {
+    background: #eef2ff;
+    color: var(--blue);
+}
+
+.user-chip {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.avatar {
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #dff5f3;
+    color: #087e7a;
+}
+
+.page {
+    max-width: 1200px;
+    margin: 38px auto;
+    padding: 0 24px;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.eyebrow {
+    font-size: 10px;
+    letter-spacing: 1.8px;
+    font-weight: 800;
+    color: var(--blue);
+    margin: 0 0 9px;
+}
+
+.heading h1 {
+    font: 800 clamp(26px, 3vw, 35px) Manrope;
+    margin: 0;
+    letter-spacing: -1px;
+}
+
+.heading p:not(.eyebrow) {
+    font-size: 14px;
+    color: var(--muted);
+    margin: 10px 0 0;
+}
+
+.calendar-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 15px;
+    padding: 14px 18px;
+}
+
+.calendar-icon {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: #eef2ff;
+    color: var(--blue);
+    font-size: 23px;
+}
+
+.calendar-badge strong,
+.calendar-badge small {
+    display: block;
+}
+
+.calendar-badge strong {
+    font-size: 13px;
+}
+
+.calendar-badge small {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 4px;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 17px;
+    margin-bottom: 24px;
+}
+
+.summary-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.summary-icon {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    border-radius: 13px;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.blue-bg {
+    background: #eef2ff;
+    color: #315be8;
+}
+
+.green-bg {
+    background: #e6f8ef;
+    color: #15945b;
+}
+
+.orange-bg {
+    background: #fff2e4;
+    color: #d47b20;
+}
+
+.summary-card small,
+.summary-card strong,
+.summary-card em {
+    display: block;
+}
+
+.summary-card small {
+    font-size: 11px;
+    color: #8290a4;
+}
+
+.summary-card strong {
+    font: 800 25px Manrope;
+    margin: 3px 0;
+}
+
+.summary-card em {
+    font-style: normal;
+    font-size: 10px;
+    color: #a0a9b7;
+}
+
+.panel {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 5px 18px #23385c05;
+}
+
+.panel-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.panel-heading h2,
+.prep h2 {
+    font: 800 20px Manrope;
+    margin: 0;
+}
+
+.status-note {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background: #fff8e9;
+    color: #99722b;
+    padding: 8px 11px;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.status-note i {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #e5ad39;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 900px;
+    text-align: left;
+}
+
+th {
+    background: #f7f9fd;
+    color: #8390a4;
+    font-size: 10px;
+    letter-spacing: .3px;
+    font-weight: 800;
+    padding: 15px 13px;
+}
+
+td {
+    padding: 18px 13px;
+    border-bottom: 1px solid #edf0f6;
+    font-size: 11px;
+    color: #526078;
+    vertical-align: middle;
+}
+
+tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.company {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    min-width: 175px;
+}
+
+.logo {
+    width: 39px;
+    height: 39px;
+    display: grid;
+    place-items: center;
+    border-radius: 11px;
+    font: 800 18px Manrope;
+    flex: none;
+}
+
+/* Original company logo colors */
+
+.infosys {
+    background: #eaf1ff;
+    color: #1768bd;
+}
+
+.tcs {
+    background: #eaf8f4;
+    color: #087f69;
+}
+
+.accenture {
+    background: #f2eaff;
+    color: #7942be;
+}
+
+/* Added company logo colors */
+
+.capgemini {
+    background: #e8f0ff;
+    color: #1746a2;
+}
+
+.deloitte {
+    background: #e8f8ed;
+    color: #16834a;
+}
+
+.goldman {
+    background: #e8f1ff;
+    color: #4778b8;
+    font-size: 14px;
+}
+
+.thales {
+    background: #e9f7ff;
+    color: #0876a8;
+}
+
+.cisco {
+    background: #e6f8fb;
+    color: #087e9b;
+}
+
+.wipro {
+    background: #f1eaff;
+    color: #7041b5;
+}
+
+.cognizant {
+    background: #e9f1ff;
+    color: #2255a4;
+}
+
+.hcl {
+    background: #e5f8f3;
+    color: #087d67;
+}
+
+.ibm {
+    background: #eaf0ff;
+    color: #2455a4;
+    font-size: 13px;
+}
+
+.company strong,
+.company small {
+    display: block;
+}
+
+.company strong {
+    font-size: 12px;
+    color: #273650;
+}
+
+.company small {
+    font-size: 10px;
+    color: #8995a8;
+    margin-top: 5px;
+}
+
+.subline {
+    display: block;
+    color: #8d98a9;
+    font-size: 10px;
+    margin-top: 6px;
+}
+
+.mode {
+    display: inline-block;
+    border-radius: 7px;
+    padding: 7px 9px;
+    font-size: 10px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.online {
+    background: #eaf2ff;
+    color: #356bd0;
+}
+
+.offline {
+    background: #fff2e4;
+    color: #bd751e;
+}
+
+.rounds {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+.rounds span {
+    background: #f1f4fa;
+    border-radius: 5px;
+    padding: 6px 7px;
+    color: #5d6c83;
+    font-size: 9px;
+}
+
+.rounds b {
+    color: #a4afc0;
+    font-size: 12px;
+}
+
+.venue {
+    display: block;
+    max-width: 160px;
+    line-height: 1.5;
+    color: #5d6b81;
+}
+
+.table-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    border-top: 1px solid #edf0f6;
+    padding-top: 16px;
+    margin-top: 3px;
+    font-size: 10px;
+    color: #8793a5;
+}
+
+.table-foot b {
+    color: #59677d;
+}
+
+.legend {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.legend i {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+
+.online-dot {
+    background: #4c83e7;
+}
+
+.offline-dot {
+    background: #e5a04d;
+}
+
+.prep {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 30px;
+    align-items: center;
+    margin-top: 24px;
+    padding: 25px 28px;
+    background: linear-gradient(110deg, #eaf0ff, #effafa);
+    border: 1px solid #dce6fa;
+    border-radius: 18px;
+}
+
+.prep h2 {
+    font-size: 19px;
+}
+
+.prep>div:first-child>p:last-child {
+    font-size: 12px;
+    color: #74839b;
+    line-height: 1.6;
+}
+
+.checklist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.checklist>div {
+    background: #ffffffc9;
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    padding: 14px;
+}
+
+.checklist span {
+    font: 800 12px Manrope;
+    color: var(--blue);
+}
+
+.checklist p {
+    font-size: 11px;
+    color: #5e6d85;
+    line-height: 1.5;
+    margin: 9px 0 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    color: #96a0b1;
+    font-size: 11px;
+    padding: 25px 3px 10px;
+}
+
+/* Responsive layout */
+
+@media (max-width: 900px) {
+    .prep {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-card {
+        padding: 15px;
+    }
+
+    .checklist {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .topbar {
+        padding: 0 18px;
+    }
+
+    .topbar nav {
+        gap: 0;
+    }
+
+    .topbar nav a {
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+
+    .user-chip>span:last-child {
+        display: none;
+    }
+
+    .page {
+        margin: 25px auto;
+        padding: 0 15px;
+    }
+
+    .summary {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-card {
+        padding: 15px 18px;
+    }
+
+    .heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .panel {
+        padding: 18px;
+    }
+
+    .panel-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .table-foot {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .checklist {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .topbar {
+        height: auto;
+        min-height: 70px;
+        flex-wrap: wrap;
+        padding: 13px 16px;
+    }
+
+    .topbar nav {
+        order: 3;
+        width: 100%;
+        overflow: auto;
+    }
+}
