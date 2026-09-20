@@ -1,0 +1,517 @@
+/* =========================================
+   PLACEMENT MANAGEMENT SYSTEM - F3
+   COMMON THEME
+========================================= */
+
+:root {
+
+    --primary-color: #1F3B5C;
+    --accent-color: #D4A017;
+
+    --bg-color: #F5F6FA;
+    --card-bg: #FFFFFF;
+
+    --text-color: #222222;
+    --text-muted: #6B7280;
+
+    --border-color: #E0E0E0;
+
+    --status-applied: #3B82F6;
+    --status-shortlisted: #F59E0B;
+    --status-interview: #8B5CF6;
+    --status-selected: #22C55E;
+    --status-rejected: #EF4444;
+
+    --font-main: 'Poppins', sans-serif;
+
+    --radius: 10px;
+    --shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+
+    font-family: var(--font-main);
+
+    background: var(--bg-color);
+
+    color: var(--text-color);
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   PAGE
+========================================= */
+
+.page-container {
+
+    width: 92%;
+
+    max-width: 1200px;
+
+    margin: 35px auto;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.page-header {
+
+    background: var(--primary-color);
+
+    color: white;
+
+    padding: 24px 28px;
+
+    border-radius: var(--radius);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 22px;
+
+    box-shadow: var(--shadow);
+}
+
+.page-header h1 {
+
+    font-size: 25px;
+
+    font-weight: 600;
+
+    margin-bottom: 3px;
+}
+
+.page-header p {
+
+    color: #E5E7EB;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   PAGE LABEL
+========================================= */
+
+.page-label {
+
+    background: var(--accent-color);
+
+    color: white;
+
+    padding: 7px 16px;
+
+    border-radius: 6px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+}
+
+.page-label.admin {
+
+    background: var(--accent-color);
+}
+
+
+/* =========================================
+   COMMON CARD
+========================================= */
+
+.card {
+
+    background: var(--card-bg);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+}
+
+
+/* =========================================
+   STUDENT INFO
+========================================= */
+
+.student-info {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px 22px;
+
+    margin-bottom: 20px;
+}
+
+.avatar {
+
+    width: 50px;
+
+    height: 50px;
+
+    background: var(--primary-color);
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: 600;
+
+    font-size: 17px;
+}
+
+.student-info h2 {
+
+    color: var(--primary-color);
+
+    font-size: 17px;
+
+    font-weight: 600;
+}
+
+.student-info p {
+
+    color: var(--text-muted);
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   SUMMARY
+========================================= */
+
+.summary-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 16px;
+
+    margin-bottom: 22px;
+}
+
+.summary-card {
+
+    padding: 18px 20px;
+}
+
+.summary-card span {
+
+    display: block;
+
+    color: var(--text-muted);
+
+    font-size: 12px;
+
+    margin-bottom: 5px;
+}
+
+.summary-card strong {
+
+    color: var(--primary-color);
+
+    font-size: 25px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   NUMBER COLORS
+========================================= */
+
+.yellow-text {
+
+    color: var(--status-shortlisted) !important;
+}
+
+.purple-text {
+
+    color: var(--status-interview) !important;
+}
+
+.green-text {
+
+    color: var(--status-selected) !important;
+}
+
+.red-text {
+
+    color: var(--status-rejected) !important;
+}
+
+
+/* =========================================
+   TABLE CARD
+========================================= */
+
+.table-card {
+
+    padding: 24px;
+}
+
+.section-heading {
+
+    margin-bottom: 18px;
+}
+
+.section-heading h2 {
+
+    color: var(--primary-color);
+
+    font-size: 19px;
+
+    font-weight: 600;
+}
+
+.section-heading p {
+
+    color: var(--text-muted);
+
+    font-size: 12px;
+
+    margin-top: 2px;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.table-wrapper {
+
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: var(--card-bg);
+}
+
+thead th {
+
+    background: var(--primary-color);
+
+    color: white;
+
+    padding: 13px 15px;
+
+    text-align: left;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    white-space: nowrap;
+}
+
+tbody td {
+
+    padding: 14px 15px;
+
+    border-bottom: 1px solid var(--border-color);
+
+    font-size: 12px;
+
+    color: var(--text-color);
+
+    white-space: nowrap;
+}
+
+
+/* Striped Rows */
+
+tbody tr:nth-child(even) {
+
+    background: #F8F9FA;
+}
+
+
+/* Hover */
+
+tbody tr:hover {
+
+    background: #F2F4F7;
+}
+
+tbody td strong {
+
+    color: var(--primary-color);
+
+    font-weight: 500;
+}
+
+
+/* =========================================
+   STATUS BADGES
+========================================= */
+
+.status {
+
+    display: inline-block;
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* Applied */
+
+.status.applied {
+
+    background: #E8F1FF;
+
+    color: var(--status-applied);
+}
+
+
+/* Shortlisted */
+
+.status.shortlisted {
+
+    background: #FFF4D6;
+
+    color: var(--status-shortlisted);
+}
+
+
+/* Interview */
+
+.status.interview {
+
+    background: #F0EBFF;
+
+    color: var(--status-interview);
+}
+
+
+/* Selected */
+
+.status.selected {
+
+    background: #E8F8EE;
+
+    color: var(--status-selected);
+}
+
+
+/* Rejected */
+
+.status.rejected {
+
+    background: #FDECEC;
+
+    color: var(--status-rejected);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .summary-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .page-container {
+
+        width: 94%;
+
+        margin: 20px auto;
+    }
+
+    .page-header {
+
+        padding: 18px;
+
+        gap: 10px;
+
+        align-items: flex-start;
+    }
+
+    .page-header h1 {
+
+        font-size: 21px;
+    }
+
+    .page-label {
+
+        font-size: 9px;
+
+        padding: 6px 10px;
+    }
+
+    .summary-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .table-card {
+
+        padding: 16px;
+    }
+
+    .student-info {
+
+        padding: 15px;
+    }
+}
