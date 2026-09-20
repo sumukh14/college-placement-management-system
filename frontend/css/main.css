@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap');
+
 :root {
   --primary-color: #1F3B5C;
   --accent-color: #D4A017;
@@ -7,6 +9,15 @@
   --text-muted: #6B7280;
   --border-color: #E0E0E0;
 
+  /* Modern Design System Tokens */
+  --ink: #17243b;
+  --muted: #718096;
+  --blue: #315be8;
+  --teal: #16a6a1;
+  --line: #e6ebf3;
+  --bg: #f4f7fc;
+  --white: #ffffff;
+
   --status-applied: #3B82F6;
   --status-shortlisted: #F59E0B;
   --status-interview: #8B5CF6;
@@ -14,6 +25,8 @@
   --status-rejected: #EF4444;
 
   --font-main: 'Poppins', sans-serif;
+  --font-display: 'Manrope', sans-serif;
+  --font-body: 'DM Sans', 'Poppins', sans-serif;
   --radius: 8px;
   --shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
@@ -25,12 +38,214 @@
 }
 
 body {
-  font-family: var(--font-main);
+  font-family: var(--font-body);
   background-color: var(--bg-color);
   color: var(--text-color);
 }
 
-/* Common Navbar */
+/* ================= Modern Topbar (Profile Reference) ================= */
+.topbar {
+  height: 76px;
+  min-height: 76px;
+  background: #ffffff;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6.5%;
+  gap: 24px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.topbar .brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--ink);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.brand-mark,
+.topbar .brand-mark {
+  display: grid;
+  place-items: center;
+  width: 37px;
+  height: 37px;
+  background: linear-gradient(135deg, #315be8, #18b8b0);
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.brand-mark.admin-mark,
+.topbar .brand-mark.admin-mark {
+  background: linear-gradient(135deg, #1F3B5C, #D4A017);
+}
+
+.badge-role,
+.topbar .badge-role {
+  font-size: 11px;
+  font-weight: 700;
+  background: #f1f5f9;
+  color: #475569;
+  padding: 3px 8px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Login Page Branding */
+.login-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.login-brand .brand-mark {
+  width: 48px;
+  height: 48px;
+  font-size: 16px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(49, 91, 232, 0.22);
+}
+
+.login-brand .brand-mark.admin-mark {
+  box-shadow: 0 4px 12px rgba(31, 59, 92, 0.22);
+}
+
+.login-brand h2 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--ink);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.login-brand p {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 0;
+}
+
+.back-home {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 12px;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.back-home:hover {
+  color: var(--blue);
+}
+
+.topbar nav {
+  background: transparent !important;
+  width: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: flex-start !important;
+  gap: 8px;
+  align-items: center;
+}
+
+.topbar nav a {
+  padding: 11px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #68758a;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.topbar nav a:hover,
+.topbar nav a.active,
+.topbar nav .active {
+  background: #eef2ff;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.topbar .user-chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.topbar .avatar {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #dff5f3;
+  color: #087e7a;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.topbar .avatar.admin-avatar {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+/* Responsive Topbar */
+@media (max-width: 992px) {
+  .topbar {
+    padding: 10px 3%;
+  }
+  .topbar nav {
+    gap: 2px;
+  }
+  .topbar nav a {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 820px) {
+  .topbar {
+    min-height: 70px;
+    flex-wrap: wrap;
+    padding: 12px 4%;
+  }
+  .topbar nav {
+    order: 3;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+  .topbar .user-chip > span:last-child {
+    display: none;
+  }
+}
+
+/* Legacy Navbar Fallback if needed */
 .navbar {
   background-color: var(--primary-color);
   color: white;
