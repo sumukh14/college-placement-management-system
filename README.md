@@ -14,8 +14,8 @@ Each member should only work inside their own branch, and only touch the files l
 | Member | Branch name | Files to edit | What to build |
 |---|---|---|---|
 | **Sumukh Dixit (Leader)** | `sumukh-admin-results` | `admin-dashboard.html`, `companies.html`, `results.html`, `index.html`, `style.css` | Admin dashboard (placement statistics), company & drive management page, final placement results page. Also responsible for the overall theme and reviewing/merging everyone's pull requests. |
-| **Sumit Kumar** | `sumit-profile-drives` | `profile.html`, `placement-drives.html`, `interviews.html` | Student profile page, placement drive listing (with eligibility tags and company comparison view), and the interview schedule page. |
-| **Sumit Kumar Sharma** | `sumitsharma-status-admin` | `application-status.html`, `students.html`, `applications.html` | Student application status page, and the admin-side student information and applications pages. |
+| **Sumit Kumar Sharma** | `sumit-profile-drives` | `profile.html`, `placement-drives.html`, `interviews.html` | Student profile page, placement drive listing (with eligibility tags and company comparison view), and the interview schedule page. |
+| **Sumit Kumar** | `sumitsharma-status-admin` | `application-status.html`, `students.html`, `applications.html` | Student application status page, and the admin-side student information and applications pages. |
 | **Swarit Shukla** | `swarit-login-dashboard` | `login.html`, `dashboard.html`, `admin-login.html` | Student login page, student dashboard, admin login page. |
 
 **Note on `style.css`:** only Sumukh should edit this file, since the theme is already set up. If you need a new style for your own page, add it at the very bottom of `style.css` under a comment with your name, for example:
