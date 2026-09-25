@@ -16,10 +16,13 @@
             <p>Staff & Placement Officer Login</p>
         </div>
 
-        <form action="admin-dashboard.html">
+       <form action="admin-dashboard.html">
             <div class="form-group">
-                <label for="staffId">Staff ID / Email:</label>
-                <input type="text" id="staffId" placeholder="Enter Staff ID or Email" required>
+                <label for="staffId">Email:</label>
+                <input type="email" placeholder="Enter your email"
+                        pattern=`^[A-Za-z0-9._%+-]+@(gmail\.com|yahoo\.com|outlook\.com|hotmail\.com)$`
+                        title="Please enter a valid Gmail, Yahoo, Outlook or Hotmail address"
+                        required>
             </div>
 
             <div class="form-group">

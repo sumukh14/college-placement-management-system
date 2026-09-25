@@ -288,3 +288,21 @@ body {
     }
 
 }
+.resume-actions {
+  margin-top: 18px;
+}
+
+.btn-update-resume {
+  display: inline-block;
+  padding: 9px 22px;
+  background-color: var(--primary-color, #1F3B5C);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.btn-update-resume:hover {
+  background-color: var(--accent-color, #D4A017);
+}

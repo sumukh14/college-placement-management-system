@@ -36,14 +36,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: var(--font-body);
   background-color: var(--bg-color);
   color: var(--text-color);
 }
 
-/* ================= Modern Topbar (Profile Reference) ================= */
+main,
+.page-container {
+  margin-top: 50px !important;
+}
+
 .topbar {
   height: 76px;
   min-height: 76px;
@@ -54,8 +57,6 @@ body {
   justify-content: space-between;
   padding: 0 6.5%;
   gap: 24px;
-  position: sticky;
-  top: 0;
   z-index: 1000;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
 }
@@ -214,7 +215,7 @@ body {
   color: #b45309;
 }
 
-/* Responsive Topbar */
+
 @media (max-width: 992px) {
   .topbar {
     padding: 10px 3%;
@@ -245,7 +246,6 @@ body {
   }
 }
 
-/* Legacy Navbar Fallback if needed */
 .navbar {
   background-color: var(--primary-color);
   color: white;

@@ -553,4 +553,29 @@ tbody td strong {
         padding: 15px;
     }
 }
+.calendar-day-link {
+  text-decoration: none;
+}
+
+.target-card {
+  display: none;
+}
+
+#day20 {
+  display: block;
+}
+
+#day21:target,
+#day22:target,
+#day23:target,
+#day24:target {
+  display: block;
+}
+
+#day20:has(~ #day21:target),
+#day20:has(~ #day22:target),
+#day20:has(~ #day23:target),
+#day20:has(~ #day24:target) {
+  display: none;
+}
 
