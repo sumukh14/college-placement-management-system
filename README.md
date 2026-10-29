@@ -35,7 +35,7 @@ Everyone except Sumukh should follow these steps.
 ### One-time setup
 
 ```
-git clone https://github.com/sumukh14/College-Placement-and-Career-Management-System.git
+git clone https://github.com/sumukh14/college-placement-management-system.git
 cd College-Placement-and-Career-Management-System
 ```
 
